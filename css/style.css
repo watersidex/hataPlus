@@ -1,0 +1,1056 @@
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url('../fonts/RobotoSlab-Bold.eot');
+    src: url('../fonts/RobotoSlab-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/RobotoSlab-Bold.woff2') format('woff2'),
+        url('../fonts/RobotoSlab-Bold.woff') format('woff'),
+        url('../fonts/RobotoSlab-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+html {
+    font-size: 1px;
+}
+
+body {
+    margin: 0;
+    font-family: "Arial";
+    cursor: url('../img/normal.cur'), auto;
+}
+
+
+a:hover {
+    cursor: url('../img/hover.cur'), auto;
+}
+
+hr {
+    border: 1px solid transparent;
+    border-top-color: #e4e4ec;
+}
+
+sup {
+    font-size: 0.6em;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 960rem;
+    padding: 0 20px 0;
+}
+
+.contact-row {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.column {
+    width: 219rem;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.colummn {
+    width: 219rem;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.contact-column {
+    font-size: 14px;
+    line-height: 21px;
+    color: #666666;
+    font-family: "Arial";
+}
+
+.sheet {
+    font-size: 14rem;
+    line-height: 24rem;
+    color: #666666;
+    width: 100%;
+    overflow-x: scroll;
+    font-family: "Arial";
+}
+
+.top {
+    background-color: #1f1f56;
+}
+
+.topmenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.details p {
+    margin: 0;
+}
+
+.marginColumn {
+    margin-top: 20px;
+}
+
+.margin {
+    margin: 10px
+}
+
+.topmenu ul {
+    list-style: none;
+    padding: 0;
+    font-size: 14rem;
+    letter-spacing: 2rem;
+}
+
+.topmenu li {
+    display: inline-block;
+}
+
+.topmenu a {
+    color: #b1b1d2;
+    text-decoration: none;
+}
+
+.nav {
+    display: none;
+}
+
+.nav li {
+    margin-right: 25rem;
+}
+
+.nav a:hover {
+    color: #fd8300;
+}
+
+.rel {
+    position: relative;
+    width: 20px;
+    height: 10px;
+}
+
+.ssp {
+    position: absolute;
+    width: 15px;
+    background-color: white;
+    height: 3px;
+    top: 0;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.sp {
+    position: absolute;
+    width: 15px;
+    background-color: white;
+    height: 3px;
+    bottom: 0;
+}
+
+.menuOpen {
+    position: fixed;
+    display: block;
+    top: 33px;
+    left: -10px;
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+    padding-top: 25vh;
+    margin: 0 10px 0;
+    background-color: #1f1f56;
+}
+
+.menuOpen ul {
+    row-gap: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menuOpen li {
+    margin: 0;
+    padding: 0;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+}
+
+.social li {
+    margin-right: 25px;
+}
+
+.social li:last-child {
+    margin-right: 0;
+}
+
+.social a {
+    display: block;
+    background: url(../img/social_icon.png);
+    transition: all 1s ease;
+}
+
+a.fb {
+    width: 10px;
+    height: 19px;
+}
+
+a.fb:hover {
+    background-position: 0 -21px;
+}
+
+a.tw {
+    width: 18px;
+    height: 15px;
+    background-position: -12px 0;
+}
+
+a.tw:hover {
+    background-position: -12px -21px;
+}
+
+a.inst {
+    width: 19px;
+    height: 19px;
+    background-position: -32px 0;
+}
+
+a.inst:hover {
+    background-position: -32px -21px;
+}
+
+.middle {
+    padding: 30rem 0 30rem;
+    box-shadow: 0 0 5rem rgba(0, 0, 0, 0.1);
+}
+
+.middle p {
+    margin: 0;
+}
+
+.contact,
+.message {
+    position: relative;
+    padding-left: 48rem;
+    padding-top: 10rem;
+}
+
+.contacct,
+.messagge {
+    position: relative;
+    padding-top: 10rem;
+}
+
+.contact a,
+.contacct a {
+    color: #25252c;
+    text-decoration: none;
+    line-height: 1.3em;
+    font-size: 18rem;
+    font-weight: bold;
+}
+
+.number {
+    position: relative;
+}
+
+.number:before {
+    content: "";
+    position: absolute;
+    top: 1px;
+    left: -28px;
+    width: 16px;
+    height: 17px;
+    background: url(../img/message_icon.png) -1px -1px;
+}
+
+.number,
+.mailto {
+    display: inline-block;
+    margin-bottom: 10rem;
+}
+
+.message a,
+.messagge a {
+    position: relative;
+    color: #25252c;
+    text-decoration: none;
+    font-size: 16rem;
+}
+
+.sms:before {
+    content: "";
+    display: none;
+    position: absolute;
+    left: 4px;
+    top: -4px;
+    width: 1px;
+    height: 52px;
+    background-color: #e4e4ec;
+}
+
+.mailto {
+    position: relative;
+}
+
+.mailto:before {
+    content: "";
+    position: absolute;
+    left: -28px;
+    top: 1px;
+    width: 17px;
+    height: 13px;
+    background: url(../img/message_icon.png) -38px -3px;
+}
+
+.mailto:hover {
+    text-decoration: underline;
+}
+
+.skype {
+    position: relative;
+}
+
+.skype:before {
+    content: "";
+    position: absolute;
+    left: -28px;
+    top: 1px;
+    width: 18px;
+    height: 19px;
+    background: url(../img/message_icon.png) -18px -1px;
+}
+
+.table {
+    padding: 40rem 0;
+}
+
+.table strong {
+    color: #24242b;
+    font-size: 22rem;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+}
+
+.table p {
+    color: #666;
+    font-size: 14rem;
+    line-height: 1.7em;
+    margin-top: 27px;
+    margin-bottom: 35px;
+}
+
+.table a {
+    color: #fd8300;
+    font-weight: bold;
+    font-size: 14rem;
+    line-height: 1.7em;
+    text-decoration: none;
+    transition: all 1s ease;
+}
+
+.table a:hover {
+    text-decoration: underline;
+}
+
+.sheet {
+    min-height: 46rem;
+}
+
+.sheet table {
+    border-collapse: collapse;
+    width: 100%;
+    border-radius: 3rem;
+    overflow: hidden;
+}
+
+.sheet tr:nth-child(n+3) td {
+    border-top: 1px solid #cdcddd;
+}
+
+.sheet tr:hover td {
+    color: #fff;
+    background-color: #fd8300;
+    transition: all 1s ease;
+}
+
+.sheet th {
+    padding: 0 20rem;
+    border: none;
+    background-color: #1f1f56;
+}
+
+.sheet td {
+    padding: 0 5rem 20rem;
+    color: #666;
+    background-color: #e4e4ec;
+}
+
+.sheet a {
+    color: #fff;
+    font: 700 14rem/1.7em "Roboto Slab";
+}
+
+.sheet a:hover {
+    padding-left: 0;
+    text-decoration: none;
+}
+
+.e-mail a {
+    color: #25252c;
+    font-weight: normal;
+    font-size: 16rem;
+    line-height: 1.5em;
+}
+
+.navigation {
+    display: flex;
+    margin-bottom: 45rem;
+    flex-wrap: wrap;
+}
+
+.inRowInput input,
+.inRowInput textarea,
+.inRowInput label {
+    width: 100%;
+    resize: vertical;
+}
+
+.inRowInput textarea {
+    min-height: 130rem;
+    max-height: 320rem;
+}
+
+
+.widthInput label {
+    width: 49%;
+}
+
+.navigation {
+    padding: 28rem 0;
+}
+
+.navigation p {
+    margin: 0;
+}
+
+.navigation form {
+    width: 100%;
+}
+
+.navigation h3 {
+    margin: 24rem 0 24rem;
+    font-size: 14px;
+    line-height: 24px;
+    color: #24242b;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+}
+
+.navigation iframe {
+    width: 100%;
+    height: 295rem;
+    border: none;
+}
+
+.form p {
+    font-family: "Roboto Slab";
+}
+
+.inRowInput input,
+.inRowInput textarea {
+    padding: 10rem 15rem;
+    font-family: Arial;
+    font-style: italic;
+    font-size: 14rem;
+    margin-bottom: 10px;
+    border: 1rem solid #c5c5d4;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.labelInput {
+    color: #666;
+    font-size: 13rem;
+    line-height: 21rem;
+    font-family: "Arial";
+}
+
+.submit {
+    display: flex;
+    padding: 7rem 25rem;
+    color: #fff;
+    margin: 0px 30px 10px 0;
+    font-size: 14rem;
+    border: 3rem solid transparent;
+    border-radius: 21rem;
+    background-color: #fd8300;
+    box-sizing: border-box;
+}
+
+.submit p {
+    margin: 0;
+}
+
+.submit:hover {
+    color: black;
+    border-color: #fd8300;
+    background-color: white;
+}
+
+.button {
+    text-align: right;
+}
+
+.button a:hover {
+    color: #fff;
+    background-color: #fd8300;
+}
+
+.button a {
+    display: inline-block;
+    margin-left: 20rem;
+    padding: 14rem 30rem;
+    color: black;
+    font-weight: bold;
+    font-size: 14rem;
+    text-decoration: none;
+    border-radius: 25rem;
+    border: 3rem solid #fd8300;
+}
+
+.proposalsofthemonth {
+    padding: 60rem 0 45rem;
+    text-align: center;
+    background-image: url(../img/proposal.jpg);
+    background-size: cover;
+}
+
+.proposalname {
+    margin: 0;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 2rem;
+    font: 700 30rem "Roboto Slab";
+    text-transform: uppercase;
+}
+
+.proposal {
+    color: #fff;
+    text-align: center;
+    font-size: 14rem;
+    line-height: 1.7em;
+}
+
+.colummn img {
+    width: 100%;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.proposalprice {
+    margin: 0;
+    color: #fd8300;
+    font-size: 24rem;
+    font-weight: bold;
+}
+
+.proposalprice b {
+    color: #fd8300;
+    font-size: 40rem;
+    font-weight: bold;
+}
+
+.content {
+    padding: 37rem 9rem 60rem;
+}
+
+.category {
+    border-radius: 3rem;
+    overflow: hidden;
+}
+
+.category p {
+    margin: 0;
+    padding: 17rem 13rem 15rem;
+    color: #fff;
+    font: 700 16rem/1.5em "Roboto Slab";
+    background-color: #1f1f56;
+}
+
+.category ul {
+    margin: 0;
+    background-color: #e4e4ec;
+}
+
+.asidemenu a {
+    display: block;
+    padding: 13rem 15rem;
+    color: #000;
+    font-size: 14rem;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+
+.asidemenu>li:hover>a {
+    color: #fff;
+    background-color: #fd8300;
+}
+
+.asidemenu>li:hover>.internalmenu {
+    display: block;
+}
+
+.internalmenu {
+    display: none;
+}
+
+.asidemenu,
+.internalmenu {
+    list-style: none;
+    padding: 0;
+    color: #000;
+    background-color: #e4e4ec;
+    border-bottom-right-radius: 5rem;
+    border-bottom-left-radius: 5rem;
+}
+
+.internalmenu a {
+    padding-left: 31rem;
+    color: #666;
+}
+
+.nash {
+    color: #24242b;
+    font: 700 14rem/1.7em "Roboto Slab";
+}
+
+.viy {
+    padding: 21rem 0 0 0;
+    color: #666;
+    font-style: normal;
+    font-size: 14rem;
+    line-height: 1.5em;
+}
+
+.a {
+    color: #000;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.internalmenu a:hover {
+    color: #666;
+    background-color: #cecedd;
+}
+
+.h {
+    font-size: 24px;
+    color: #24242b;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+}
+
+.asidemenu li {
+    position: relative;
+}
+
+.asidemenu>li:before {
+    content: "";
+    position: absolute;
+    top: 19rem;
+    right: 15rem;
+    width: 6rem;
+    height: 6rem;
+    border: 1px solid #666;
+    border-left: none;
+    border-top: none;
+    transform: rotate(-45deg);
+    transition: all 0.8s ease;
+}
+
+.asidemenu>li:hover:before {
+    border-color: #fff;
+    transform: rotate(45deg);
+}
+
+.main {
+    max-width: 713rem;
+}
+
+.mein {
+    display: flex;
+    justify-content: center;
+}
+
+.kat {
+    color: #fff;
+    font: 700 16rem/1.5em "Roboto Slab";
+}
+
+.p {
+    padding: 11rem 15rem;
+    background-color: #1f1f56;
+    border-top-right-radius: 5rem;
+    border-top-left-radius: 5rem;
+}
+
+.info address {
+    color: #666;
+    font-size: 14rem;
+    line-height: 1.5em;
+}
+
+.info h1 {
+    color: #24242b;
+    font: 700 26rem "Roboto Slab";
+}
+
+.info p {
+    color: #666;
+    font-size: 14rem;
+    line-height: 1.7em;
+}
+
+.info a:hover {
+    text-decoration: none;
+}
+
+.info a {
+    color: #fd8300;
+    text-decoration: underline;
+}
+
+.consultation {
+    font-size: 14px;
+    line-height: 21px;
+    color: #666666;
+    font-family: "Arial";
+}
+
+.consultation a {
+    color: #25252c;
+    text-decoration: none;
+}
+
+.consultation a:hover {
+    text-decoration: none
+}
+
+.popular {
+    color: #24242b;
+    text-align: center;
+    font: 700 24rem "Roboto Slab";
+}
+
+.house p,
+.housee p {
+    margin: 0;
+    color: #9999a6;
+}
+
+.house h3:hover,
+.housee h3:hover {
+    text-decoration: underline;
+}
+
+.house figure,
+.housee figure {
+    display: inline-block;
+    margin: 0;
+    color: #9999a6;
+    font-size: 13rem;
+}
+
+.house figcaption,
+.housee figcaption {
+    margin: 0;
+    color: #1f1f56;
+}
+
+.mail {
+    color: #25252c;
+    text-decoration: underline;
+}
+
+.info .column a {
+    color: black;
+}
+
+.bottommenu .column {
+    vertical-align: top;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.bottommenu {
+    padding: 40rem 0 30rem;
+    background-color: #ededf5;
+}
+
+.bottommenu ul,
+.bottommenu p {
+    color: #666;
+}
+
+.bottommenu a {
+    color: #25252c;
+    text-decoration: none;
+}
+
+.footermenu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: #666;
+    font-size: 14rem;
+    line-height: 1.7em;
+}
+
+.footermenu a {
+    color: #666;
+}
+
+.footermenu a:hover {
+    color: #fd8300;
+    text-decoration: underline;
+}
+
+.phone {
+    color: #25252c;
+    font-size: 18rem;
+    line-height: 1.4em;
+    font-weight: bold;
+}
+
+.appendix {
+    color: #25252c;
+    font-size: 16rem;
+}
+
+.bottom {
+    color: #9999a6;
+    text-align: center;
+    background-color: #dcdce6;
+}
+
+.bottom p {
+    margin: 0;
+    padding: 15rem 0;
+    font-size: 13rem;
+}
+
+@media screen and (min-width: 425px) {
+    .columnn {
+        width: 75%;
+    }
+
+    .contact-column {
+        margin-right: 9px;
+    }
+
+    .roww {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width: 456px) {
+    .colummn {
+        margin-right: 28px;
+    }
+}
+
+
+@media screen and (min-width: 762px) {
+    .contact-row {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .contact-column {
+        font-size: 14rem;
+        line-height: 21rem;
+        color: #666666;
+        margin-right: 28px;
+        font-family: "Arial";
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    .scTd {
+        text-align: right;
+    }
+
+    .th {
+        text-align: left;
+    }
+
+    .inRowInput {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10rem;
+    }
+
+    .form {
+        margin: 0 30rem;
+    }
+
+    .nav {
+        display: block;
+    }
+
+    .rel {
+        display: none;
+    }
+
+    .row {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .house {
+        display: flex;
+        justify-content: center;
+        flex-wrap: nowrap;
+    }
+
+    .housee {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .colummn:last-child {
+        margin: 0;
+    }
+
+
+    .sheet td {
+        padding: 15rem 17rem;
+    }
+
+    .sheet th {
+        padding: 15rem 20rem;
+        border: none;
+        background-color: #1f1f56;
+    }
+
+    .table strong {
+        font-size: 24rem;
+    }
+
+    .contact-row {
+        display: flex;
+        text-align: left;
+        flex-direction: row;
+    }
+
+    .contact-column {
+        margin-right: 27rem;
+    }
+
+    .navigation form {
+        width: 50%;
+    }
+
+    .navigation iframe {
+        width: 50%;
+    }
+
+    .navigation {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .navigation h3 {
+        margin: 0 0 24rem;
+    }
+
+}
+
+@media screen and (min-width: 916px) {
+    .row {
+        justify-content: space-between;
+    }
+
+}
+
+@media screen and (min-width: 935px) {
+    .columnn {
+        width: 219rem;
+    }
+
+    .mainn {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .info h1 {
+        text-align: left;
+        font: 700 30rem "Roboto Slab";
+    }
+
+    .info p {
+        text-align: left;
+    }
+
+    .popular {
+        text-align: left;
+    }
+
+    .house {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .main {
+        margin-right: 28px;
+    }
+
+    hr {
+        margin-top: 35px;
+    }
+
+    .bottommenu .column {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .housee {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+
+    .submit {
+        display: inline;
+        margin: 0px 30px 0 0;
+    }
+
+}
+
+@media screen and (min-width: 990px) {
+    .contact-column {
+        margin-right: 85rem;
+    }
+
+}
+
+@media screen and (min-width: 2560px) {
+    html {
+        font-size: 1.5px;
+    }
+}
